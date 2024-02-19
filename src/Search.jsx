@@ -7,18 +7,7 @@ import axios from 'axios';
 import Suggestions from './Suggestions';
 import { Button } from '@mui/material';
 
-// const options = {
-//     method: 'GET',
-//     url: 'https://random-words5.p.rapidapi.com/getMultipleRandom',
-//     params: {
-//       count: '20',
-//       wordLength: '6'
-//     },
-//     headers: {
-//       'X-RapidAPI-Key': api,
-//       'X-RapidAPI-Host': 'random-words5.p.rapidapi.com'
-//     }
-//   };
+
 
 export default function Search({api}){
   const options = {

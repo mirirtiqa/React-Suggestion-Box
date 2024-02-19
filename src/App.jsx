@@ -6,11 +6,12 @@ import Search from './Search'
 
 
 function App() {
-  apiKey = process.env.REACT_APP_WORDS_API
+ 
+const apiKey = import.meta.env.VITE_API_KEY;
 
   return (
     <>
-      <Search api={apiKey}/>
+      <Search api ={apiKey}/>
     </>
   )
 }
