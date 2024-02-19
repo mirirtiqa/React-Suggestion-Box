@@ -4,11 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Search from './Search'
 
+
 function App() {
+  apiKey = process.env.REACT_APP_WORDS_API
 
   return (
     <>
-      <Search/>
+      <Search api={apiKey}/>
     </>
   )
 }

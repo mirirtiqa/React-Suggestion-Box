@@ -7,7 +7,21 @@ import axios from 'axios';
 import Suggestions from './Suggestions';
 import { Button } from '@mui/material';
 
-const options = {
+// const options = {
+//     method: 'GET',
+//     url: 'https://random-words5.p.rapidapi.com/getMultipleRandom',
+//     params: {
+//       count: '20',
+//       wordLength: '6'
+//     },
+//     headers: {
+//       'X-RapidAPI-Key': api,
+//       'X-RapidAPI-Host': 'random-words5.p.rapidapi.com'
+//     }
+//   };
+
+export default function Search({api}){
+  const options = {
     method: 'GET',
     url: 'https://random-words5.p.rapidapi.com/getMultipleRandom',
     params: {
@@ -15,12 +29,10 @@ const options = {
       wordLength: '6'
     },
     headers: {
-      'X-RapidAPI-Key': 'b00ddbd1bemsh41b2dac8d6a0b09p194933jsn23a135586680',
+      'X-RapidAPI-Key': api,
       'X-RapidAPI-Host': 'random-words5.p.rapidapi.com'
     }
   };
-
-export default function Search(){
     const privateHistory = [];
     // function getInitialData(){
     //     const data = JSON.parse(localStorage.getItem("localwords"));
